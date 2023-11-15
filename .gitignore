@@ -10,3 +10,7 @@ sfml-widgets-demo
 # Code::Blocks
 sfml-widgets.layout
 sfml-widgets.depend
+
+# Subprojects cache and .folders
+.vscode
+subprojects/*/
