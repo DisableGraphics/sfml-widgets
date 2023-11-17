@@ -14,3 +14,4 @@ sfml-widgets.depend
 # Subprojects cache and .folders
 .vscode
 subprojects/*/
+.cache
