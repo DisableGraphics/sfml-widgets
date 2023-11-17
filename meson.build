@@ -1,6 +1,7 @@
 project('sfml-widgets', 'cpp', version : '0.0.1')
 
 sfml_dep = dependency('sfml', fallback: ['sfml', 'sfml_dep'])
+opengl_dep = dependency('gl')
 
 sources = [
     'src/Gui/Button.cpp',
@@ -25,7 +26,7 @@ sources = [
 
 incdirs = include_directories('src/Gui')
 
-sfml_widgets = static_library('sfml-widgets', sources, include_directories : incdirs, dependencies : [sfml_dep])
+sfml_widgets = static_library('sfml-widgets', sources, include_directories : incdirs, dependencies : [sfml_dep, opengl_dep])
 
 sfml_widgets_dep = declare_dependency(
    include_directories : incdirs,
